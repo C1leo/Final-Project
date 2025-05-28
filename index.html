@@ -1,70 +1,57 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #e6f0fa;
-  color: #1a2e45;
-}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <p></p>
+  </header>
 
-header, footer {
-  background-color: #1a2e45;
-  color: #cfe0fc;
-  text-align: center;
-  padding: 20px;
-}
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Im a Junior, born in September 20th 2008. Ive had the intrest in coding since I was young, my dad working for Facebook let me have the oppurtunity to see how this massive company grew and coding was their specialty. I learned a lot, growing up seeing this type field led me to joining this class. Although its been a difficult time lately, ive learned a lot. Underestemating coding has been my enemy throughout the year thinking it was going to be easy. Even the simple mistakes can be crutial, realized how much of a valueble skill this class can be. Now im currently pursuing a career in aviation now having a student pilot permit.</p>
+  </section>
 
-.about, .projects {
-  padding: 20px;
-  max-width: 1000px;
-  margin: auto;
-}
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="grid-container">
+      <div class="project-card">
+        <img src="https://i.postimg.cc/zGKH5xLw/Screenshot-2025-05-23-9-13-15-AM.png" alt="Screenshot of Project 1" class="project-image">
+        <h3>Project 1</h3>
+        <p>I created a simple yet fun Tic Tac Toe game where you can challenge a friend or test your logic against a basic AI. It’s a classic twist on the timeless game, built to be clean, responsive, and easy to play. </p>
+        <a href="#">View Project</a>
+      </div>
 
-h1, h2 {
-  color: #2a59a8;
-}
+      <div class="project-card">
+        <img src="https://i.postimg.cc/7YWs2ZZP/Screenshot-2025-05-26-4-12-44-PM.png" alt="Project 2" class="project-image">
+        <h3>Project 2</h3>
+        <p>I made a stopwatch that's super easy to use you just hit start, stop, or reset, and it does exactly what you need. It's clean, simple, and great for timing anything from workouts to coffee breaks.</p>
+        <a href="#">View Project</a>
+      </div>
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
+      <div class="project-card">
+        <img src="https://i.postimg.cc/qqsxKyM1/Screenshot-2025-05-27-9-25-49-AM.png" alt="Project 3" class="project-image">
+        <h3>Project 3</h3>
+        <p>I made a quiz app that asks multiple-choice questions and keeps track of your score as you go. It’s a fun, straightforward way to challenge yourself and see how many points you can rack up.</p>
+        <a href="#">View Project</a>
+      </div>
+      
+      <div class="project-card">
+       <img class="project-image" src="https://i.postimg.cc/8ztwwRd3/Screenshot-2025-05-28-9-35-57-AM.png">
+        <h3>Project 4</h3>
+        <p>I created a Cookie Clicker game with a bold red background that makes everything pop. Each click earns you cookies, and you can spend them on upgrades to boost your cookie count faster and faster. The best part? The cookie slowly dissolves with every click, adding a fun visual twist as you tap your way to a cookie empire.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
 
-.project-card {
-  background: #ffffff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(42, 89, 168, 0.2);
-  transition: box-shadow 0.3s ease;
-}
+  <footer>
+    <p>Leonardo Castillo - Portofolio</p>
+  </footer>
 
-.project-card:hover {
-  box-shadow: 0 6px 25px rgba(42, 89, 168, 0.4);
-}
-
-.project-card h3 {
-  margin-top: 0;
-  color: #2a59a8;
-}
-
-.project-card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #4178be;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.project-card a:hover {
-  text-decoration: underline;
-  color: #1a2e45;
-}
-
-.project-image {
-  max-width: 100%;
-  width: 300px;
-  height: auto;
-  border-radius: 5px;
-  display: block;
-  margin: 0 auto;
-  box-shadow: 0 2px 8px rgba(42, 89, 168, 0.2);
-}
+  <script src="script.js"></script>
+</body>
+</html>
